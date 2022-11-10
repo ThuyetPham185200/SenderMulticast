@@ -17,7 +17,7 @@ ApplicationWindow {
         color: "transparent"
 
         Sender {
-               id: sender
+            id: sender
         }
 
         GridLayout {
@@ -37,9 +37,12 @@ ApplicationWindow {
             }
             TextField {
                 id: txtFile
-                text: "/home/thuyet/Desktop/logs/15-05-28.bin"
+                text: "/home/thuyet/Desktop/logs/14-20-32.bin"
             }
-
+            TextField {
+                id: txtFrequency
+                text: sender.frequency
+            }
 
             Button {
                 text: "Send"
